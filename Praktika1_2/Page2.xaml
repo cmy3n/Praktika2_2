@@ -1,0 +1,53 @@
+﻿<Page x:Class="Praktika1_2.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Praktika1_2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition/>
+
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid Background="LightGray" x:Name="DataGrid2" Grid.Row="0" Grid.ColumnSpan="5" IsReadOnly="True"/>
+
+        <TextBox Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="2" x:Name="Number"/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="3" x:Name="Products"/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="4" x:Name="Price"/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="5" x:Name="DateTime"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Введите номер заказа:" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Введите товары в заказе:" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Введите цену заказа:" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Введите дату прибытия:" HorizontalAlignment="Center"/>
+
+        <Button Background="White" Content="-----→" Name="ButtonPage2_Right" Click="ButtonPage2_Right_Click" Grid.Row="8" Grid.Column="4"/>
+        <Button Background="White" Content="←-----" Name="ButtonPage2_Left" Click="ButtonPage2_Left_Click"  Grid.Row="8" Grid.Column="0"/>
+
+        <Button Background="Lime" x:Name="AddButton" Content="+" Click="AddButton_Click" Grid.Row="8" Grid.Column="1"/>
+        <Button Background="Red" x:Name="DeleteButton" Content="x" Click="DeleteButton_Click" Grid.Row="8" Grid.Column="2"/>
+        <Button Background="Yellow" x:Name="EditButton" Content="✏️" Click="EditButton_Click" Grid.Row="8" Grid.Column="3"/>
+    </Grid>
+</Page>

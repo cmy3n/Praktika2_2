@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PunktVidachiZakazovModel1Container" CdmEntityContainer="PunktVidachiZakazovEntities2">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="PunktVidachiZakazovModel1.Clients">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="ID_Client" ColumnName="ID_Client" />
+          <ScalarProperty Name="ClientSurname" ColumnName="ClientSurname" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="ClientMiddleName" ColumnName="ClientMiddleName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="PunktVidachiZakazovModel1.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="Order_Number" ColumnName="Order_Number" />
+          <ScalarProperty Name="Products" ColumnName="Products" />
+          <ScalarProperty Name="Order_Price" ColumnName="Order_Price" />
+          <ScalarProperty Name="Arrival_DateTime" ColumnName="Arrival_DateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrdersClients">
+      <EntityTypeMapping TypeName="PunktVidachiZakazovModel1.OrdersClients">
+        <MappingFragment StoreEntitySet="OrdersClients">
+          <ScalarProperty Name="ID_OrdersClients" ColumnName="ID_OrdersClients" />
+          <ScalarProperty Name="ReceivingDateTime" ColumnName="ReceivingDateTime" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
